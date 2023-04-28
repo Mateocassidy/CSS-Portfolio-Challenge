@@ -1,0 +1,200 @@
+/* Universal selector. Styles box-sizing to borer-box. Also styles padding and margin. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Creates variable main  color. Now I can input this anywhere on CSS instead of typing out the same color. */
+:root {
+    --main-color: #333;
+  }
+
+/* Styles the background color of the body. */
+body{
+    background-color: var(--main-color);
+}
+
+/* Styles the header section with display, justify-conetent, centering, padding, margins, background color, text color, and font-size. */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* Styles h1 in header section margin */
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Styles unordered list with display, margin, and padding */
+  .header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles items on list with a list-style and a margin-right */
+  .header li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+ /* Styles the lnks attatched as well as the text for the links that are in the header. Styles with color, text-decoration, and font-weight */
+  a{
+    color: black;
+    text-decoration: none; 
+    font-weight: bold;
+}
+/* Styles the hover of the header links with a color */
+a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+/* Styles h2 tag with font-size, color, and text-alignment. */
+  h2{
+    font-size: 24px;
+    color:white;
+    text-align: center;
+  }
+
+/* Styles about section with display, justify-content, align-items, mad-width, margin, and padding. */
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  /* Styles the image in about section with max-width and height. */
+  .about img {
+    max-width: 45%;
+    height: auto;
+  }
+  
+  /* Styles p tag text with color, font-weight, and font-size */
+  p{
+    color: rgb(205, 199, 199);
+    font-weight: 400; 
+    font-size: 22px;
+  }
+
+  /*Styles h3 tag text with font-size, Margin-left, and color */
+h3{
+    font-size: 24px;
+    Margin-left: 125px;
+    color: white;
+
+}
+
+/* Styles the article tag identified as Projects with display and flex-direction */
+  .Projects {
+    display:flex;
+    flex-direction: column;
+  }
+
+  /* Styles the divs identified with project-box using width, bg-color, border, padding, and margin */
+  .project-box {
+    width: 300px;
+    background-color: var(--main-color);
+    border: 1px black;
+    padding:20px;
+    margin: 20px;
+  }
+  
+  /* Styles the cover images for the projects using width, height, and margin */
+  .project-box img {
+    width: 120%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles the the links attatched to the project cover images with display, text-decoration, and border-radius */
+  .project-box a {
+    display: flex;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  /* Styles the hover of the project links with a cursor */
+  .project-box a:hover {
+    cursor: pointer;
+  }
+/* Styles the h4 tag identified as CM with font size/weight, text-alignment, and color */
+.CM{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(255, 255, 255)
+}
+
+/* Styles form element by setting its max-width and margin */
+form { max-width:500px; margin:50px auto; }
+
+/* Styles the boxing and content inside the contact me. Styles using font family/size/weight, border-raidus, line-height, background-color, sets border, add transition, padding, margin, width, box-sizing, and an outline. */
+.FBI {
+  color:white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight:550;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 20px;
+  background-color: transparent;
+  border:2.5px solid #ffffff;
+  transition: all 0.3s;
+  padding: 12px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+/* Styles the input element identified as FBI with focus pseudo-class. So when i put focus on this element the border property changes */
+.FBI:focus { border:2px solid #ffffff; }
+
+/* Styles the textarea with height, line-height, and resize. */
+textarea {
+  height: 125px;
+  line-height: 125%;
+  resize:vertical;
+}
+/* Styles the submit button of the webpage with font-family, width, background, corder-radius, cursor, color, font-size, padding, margin, and font-weight. */
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#ffffff;
+  border-radius:5px;
+  cursor:pointer;
+  color:rgb(1, 0, 0);
+  font-size:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-top:-5px;
+  font-weight:1000;
+}
+
+/* Styles sumbit button to different color when hovered by using the pseudo class hover. */
+[type="submit"]:hover { background:#838a88; }
+
+/* Defines a media query that applies styles to the document when the screen size is 900px or less. I specifically changed the layout of the header, h2 tag, and p tag. */
+@media only screen and (max-width: 900px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 18px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+}
