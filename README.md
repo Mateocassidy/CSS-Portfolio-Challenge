@@ -6,6 +6,9 @@ I created a portfolio website from scratch. I used semantic html elements in an 
 
 
 ## Screenshot ##
+![UI screenshot 1](./images/SS1.jpeg)
+![UI screenshot 2](./images/SS2.jpeg)
+![UI screenshot 3](./images/SS3.jpeg)
 
 
 
