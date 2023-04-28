@@ -100,6 +100,11 @@ h3{
     flex-direction: column;
   }
 
+  /* Styles the first project in HTML identified with project-section with a larger width than other projects. */ 
+  #project-section {
+    width: 400px;
+  }
+
   /* Styles the divs identified with project-box using width, bg-color, border, padding, and margin */
   .project-box {
     width: 300px;
